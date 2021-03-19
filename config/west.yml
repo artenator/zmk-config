@@ -2,10 +2,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petej
+      url-base: https://github.com/petejohanson/zmk
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
+      import: app/west.yml
+    - name: locality
+      remote: petej
+      revision: core/peripheral-behavior-invocation
       import: app/west.yml
   self:
     path: config
