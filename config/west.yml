@@ -9,8 +9,7 @@ manifest:
     #   remote: zmkfirmware
     #   revision: main
     #   import: app/west.yml
-    - name: locality
-      repo-path: zmk
+    - name: zmk
       remote: petejohanson
       revision: core/peripheral-behavior-invocation
       import: app/west.yml
